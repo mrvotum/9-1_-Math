@@ -1,0 +1,41 @@
+{
+  "name": "9-1_Math",
+  "version": "1.0.0",
+  "description": "9_lesson 1_task",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "start": "live-server src",
+    "build": "babel src -d dist",
+    "lint": "eslint .",
+    "doc": "jsdoc -c jsdoc.conf.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrvotum/9-1_Math.git"
+  },
+  "keywords": [
+    "Netology"
+  ],
+  "author": "Vladimir",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrvotum/9-1_Math/issues"
+  },
+  "homepage": "https://github.com/mrvotum/9-1_Math#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "babel-jest": "^24.1.0",
+    "eslint": "^5.13.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "jest": "^24.1.0",
+    "jsdoc": "^3.5.5",
+    "live-server": "^1.2.1"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.2.5"
+  }
+}
