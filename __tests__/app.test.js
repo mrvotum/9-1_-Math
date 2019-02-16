@@ -35,6 +35,16 @@ test('Daemon, Stoned on', () => {
   expect(received).toEqual(expected); // сравнивает
 });
 
+test('Daemon, Stoned on, checking stonedMode', () => {
+  const inputCharacter = new Daemon('Rick');
+
+  inputCharacter.stonedMode = true;
+  const expected = true; // ожидает
+
+  const received = inputCharacter.stonedMode; // получает
+  expect(received).toEqual(expected); // сравнивает
+});
+
 test('Magician, Stoned off, distance > 10 = error', () => {
   const inputCharacter = new Magician('Rick');
 

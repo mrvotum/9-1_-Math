@@ -12,7 +12,7 @@ class creatingCharacter {
     }
     // затухание атаки:
     this._attack = this.attack - this.attack * (0.1 * (coord - 1));
-    if (coord < 10 && this.stoned === true) {
+    if (this.stoned === true) {
       this._attack = this._attack - Math.round(Math.log2(coord) * 5);
     }
   }
@@ -21,6 +21,10 @@ class creatingCharacter {
     if (turn === true) {
       this.stoned = true;
     }
+  }
+
+  get stonedMode() {
+    return this.stoned;
   }
 }
 
